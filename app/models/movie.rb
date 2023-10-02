@@ -13,4 +13,13 @@
 #  director_id :integer
 #
 class Movie < ApplicationRecord
+  def title_with_year
+    # return self.title + " (+ self.year.to_s + )"
+
+    return "#{self.title} (#{self.year})"
+  end
+
+  def the_director
+    return "howdy!"
+  end
 end
